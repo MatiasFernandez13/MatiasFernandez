@@ -1,0 +1,33 @@
+#contenedor {
+    width: 80%;
+    margin: 0 auto;
+}
+
+/* Cabecera y Pie: fondo gris y texto alineado a la izquierda */
+#cabecera, #pie {
+    background-color: #ccc;
+    text-align: left;
+    padding: 10px;
+}
+
+#menu {
+    width: 20%;
+    float: left;
+    background-color: #ddd;
+    padding: 5px;
+    box-sizing: border-box;
+}
+
+#contenido {
+    width: 80%;
+    float: left;
+    background-color: #f2f2f2;
+    padding: 50px;
+    box-sizing: border-box;
+}
+
+/* Pie: limpiar los floats */
+#pie {
+    clear: both;
+    margin-top: 20px;
+}
