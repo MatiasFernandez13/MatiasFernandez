@@ -1,0 +1,108 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+}
+
+#contenedor {
+    width: 90%;
+    margin: 0 auto;
+}
+
+#cabecera {
+    background-color: #336699;
+    color: white;
+    padding: 15px;
+    text-align: center;
+}
+
+#banner {
+    width: 100%;
+    height: auto;
+    margin-top: 10px;
+}
+
+#menu {
+    width: 35%;
+    float: left;
+    background-color: #99ccff;
+    padding: 15px;
+    box-sizing: border-box;
+}
+
+#menu ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#menu ul li {
+    margin-bottom: 10px;
+}
+
+#menu ul li a {
+    color: #003366;
+    text-decoration: none;
+}
+
+#contenido {
+    width: 65%;
+    float: left;
+    padding: 15px;
+    box-sizing: border-box;
+    background-color: #ffffff;
+}
+
+#pie {
+    clear: both;
+    background-color: #336699;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+h1, h2 {
+    margin-top: 0;
+}
+
+p {
+    margin-bottom: 15px;
+}
+
+mark {
+    background-color: yellow;
+}
+
+.enfasisG {
+    background-color: lightgray;
+    text-decoration: underline;
+}
+.enfasisV {
+    background-color: greenyellow;
+}
+.enfasisT {
+    background-color: turquoise;
+}
+.enfasisA{
+    background-color: yellow;
+    font-style: italic;
+}
+.textoR{
+    color: red;
+}
+.textoN {
+	color:#FFa550;
+    font-weight: bold;
+}
+
+.cursivaA{
+    color:#336699;
+    font-style: italic;
+    font-weight: bold;
+}
+.tachado{
+    text-decoration: line-through;
+}
+.subtitulos{
+    font-weight: bold;
+    text-decoration: underline;
+}
