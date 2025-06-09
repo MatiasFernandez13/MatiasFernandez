@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Boletín Informativo</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Estilos mínimos necesarios */
+        .oculto {
+            display: none;
+        }
+
+        form {
+            margin-top: 20px;
+            padding: 20px;
+            background-color: #f2f2f2;
+            border-radius: 10px;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .form-row {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .form-columna {
+            flex: 1;
+            min-width: 280px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .form-columna label {
+            margin-top: 10px;
+        }
+
+        .form-columna input {
+            padding: 8px;
+            font-size: 16px;
+        }
+
+        .error {
+            color: red;
+            font-size: 0.9em;
+        }
+
+        #enviar {
+            margin-top: 20px;
+            padding: 10px 30px;
+            font-size: 16px;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            cursor: pointer;
+        }
+
+        @media (max-width: 768px) {
+            .form-row {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="cabecera">
+        <div class="empresa">New York News</div>
+        <div class="fecha">02/06/2025</div>
+    </header>
+
+    <section class="titulo-principal">
+        <h1>Noticias de <span class="resaltado">NEW YORK</span></h1>
+        <h2 class="subtitulo">Todo sobre la gran ciudad</h2>
+        <img src="./img/ciudad.jpg" alt="Imagen de ciudad de New York" class="imagen-principal">
+    </section>
+
+    <section class="cuadricula">
+        <div class="tarjeta">
+            <h3><span class="titulo-secundario">Novedades</span><br><a href="#">El intento de robo</a></h3>
+            <p>Hoy por la madrugrada en uno de los bancos importantes de la ciudad se produjo un <strong>intento de robo</strong> y aquí hay una <em>palabra en cursiva</em>.</p>
+        </div>
+        <div class="tarjeta">
+            <h3><span class="titulo-secundario">Economia</span><br><a href="#">Dolar vs el mundo</a></h3>
+            <p>Como ya sabemos en <strong>Dolar, tiene un peso fuerte</strong> en Latinoamerica <em>, no así en Europa</em>.</p>
+        </div>
+        <div class="tarjeta">
+            <h3><span class="titulo-secundario">Política</span><br><a href="#">El Presidente</a></h3>
+            <p>El presidente con su último discurso, como estuvo<strong>, todos creemos que bien</strong> pero <em> así se vio en el mundo?</em>.</p>
+        </div>
+        <div class="tarjeta">
+            <h3><span class="titulo-secundario">Gaming</span><br><a href="#">Campeonato</a></h3>
+            <p>KRU sports sigue<strong> Dominando el campeonato</strong> y todos sabemos <em> que KRU va por todo</em>.</p>
+        </div>
+    </section>
+
+    <section class="seccion-final">
+        <img src="./img/messi.jpg" alt="Imagen de Messi" class="imagen-secundaria">
+        <div class="texto-final">
+            <h2>Deportes</h2>
+            <p>Los mejores de la liga de futbol son: </p>
+            <ul>
+                <li>Messi</li>
+                <li>Suarez</li>
+                <li>Otro</li>
+            </ul>
+            <p>Para más información ingrse aqui <a href="https://www.google.com" target="_blank">Only Deports</a></p>
+        </div>
+    </section>
+
+    <section class="suscripcion">
+        <button id="mostrarFormulario">Suscribirse</button>
+
+        <form id="formularioSuscripcion" class="oculto">
+            <h2 id="tituloFormulario">HOLA</h2>
+
+            <div class="form-row">
+                <div class="form-columna">
+                    <label for="nombre">Nombre completo:</label>
+                    <input type="text" id="nombre" name="nombre">
+                    <small class="error" id="error-nombre"></small>
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email">
+                    <small class="error" id="error-email"></small>
+
+                    <label for="password">Contraseña:</label>
+                    <input type="password" id="password" name="password">
+                    <small class="error" id="error-password"></small>
+
+                    <label for="repetir">Repetir Contraseña:</label>
+                    <input type="password" id="repetir" name="repetir">
+                    <small class="error" id="error-repetir"></small>
+                </div>
+
+                <div class="form-columna">
+                    <label for="edad">Edad:</label>
+                    <input type="number" id="edad" name="edad">
+                    <small class="error" id="error-edad"></small>
+
+                    <label for="telefono">Teléfono:</label>
+                    <input type="text" id="telefono" name="telefono">
+                    <small class="error" id="error-telefono"></small>
+
+                    <label for="direccion">Dirección:</label>
+                    <input type="text" id="direccion" name="direccion">
+                    <small class="error" id="error-direccion"></small>
+
+                    <label for="ciudad">Ciudad:</label>
+                    <input type="text" id="ciudad" name="ciudad">
+                    <small class="error" id="error-ciudad"></small>
+
+                    <label for="cp">Código Postal:</label>
+                    <input type="text" id="cp" name="cp">
+                    <small class="error" id="error-cp"></small>
+
+                    <label for="dni">DNI:</label>
+                    <input type="text" id="dni" name="dni">
+                    <small class="error" id="error-dni"></small>
+                </div>
+            </div>
+
+            <button type="submit" id="enviar">Enviar</button>
+        </form>
+    </section>
+
+    <footer class="pie">
+        <p>Matias Nahuel Fernandez</p>
+        <p>1er Parcial</p>
+    </footer>
+
+    <script src="formulario.js"></script>
+</body>
+</html>
